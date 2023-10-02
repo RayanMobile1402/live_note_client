@@ -1,0 +1,4 @@
+enum SearchType {
+  offset,
+  limit,
+}
