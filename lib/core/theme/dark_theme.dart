@@ -12,13 +12,13 @@ class DarkTheme extends BaseTheme {
 
   @override
   ThemeData createTheme(
-    FontUtil fontUtil,
-  ) =>
+      FontUtil fontUtil,
+      ) =>
       ThemeData(
-        primaryColor: primarySwatch.value,
+        primaryColor: primarySwatch,
         colorScheme: colorBlindnessColorScheme(
           ColorScheme.fromSwatch(
-            // primarySwatch.value: primarySwatch.value,
+            primarySwatch: primarySwatch,
             accentColor: secondaryColor.value,
             backgroundColor: scaffoldBackgroundColor.value,
             cardColor: cardColor.value,
@@ -56,39 +56,42 @@ class DarkTheme extends BaseTheme {
       );
 
   IconButtonThemeData lightIconButtonThemeData() => IconButtonThemeData(
-        style: ButtonStyle(
-          side: MaterialStateProperty.all(
-            BorderSide(
-              style: BorderStyle.solid,
-              color: secondaryColor.value,
-              width: 2,
-            ),
-          ),
+    style: ButtonStyle(
+      side: MaterialStateProperty.all(
+        BorderSide(
+          style: BorderStyle.solid,
+          color: secondaryColor.value,
+          width: 2,
         ),
-      );
+      ),
+    ),
+  );
 
   ButtonThemeData lightButtonThemeData() => ButtonThemeData(
-        buttonColor: secondaryColor.value,
-        textTheme: ButtonTextTheme.accent,
-        shape: const RoundedRectangleBorder(
-          borderRadius: Utils.normalRadius,
-        ),
-      );
+    buttonColor: secondaryColor.value,
+    textTheme: ButtonTextTheme.accent,
+    shape: const RoundedRectangleBorder(
+      borderRadius: Utils.normalRadius,
+    ),
+  );
 
   OutlinedButtonThemeData lightOutlinedButtonThemeData(
-          final FontUtil fontUtil) =>
+      final FontUtil fontUtil) =>
       OutlinedButtonThemeData(
         style: ButtonStyle(
           textStyle: MaterialStatePropertyAll(
-            textTheme(fontUtil, primarySwatch.value).labelMedium!.copyWith(
-                  fontSize: 16,
-                  color: primarySwatch.value,
-                ),
+            textTheme(
+              fontUtil,
+              primarySwatch,
+            ).labelMedium!.copyWith(
+              fontSize: 16,
+              color: primarySwatch,
+            ),
           ),
           side: MaterialStateProperty.all(
             BorderSide(
               style: BorderStyle.solid,
-              color: primarySwatch.value,
+              color: primarySwatch,
               width: 0.9,
             ),
           ),
@@ -112,50 +115,53 @@ class DarkTheme extends BaseTheme {
       );
 
   InputDecorationTheme _lightInputTheme() => InputDecorationTheme(
-        labelStyle: const TextStyle(fontSize: 50),
-        suffixStyle: const TextStyle(fontSize: 50),
-        hintStyle: const TextStyle(fontSize: 50),
-        floatingLabelStyle: const TextStyle(fontSize: 50),
-        contentPadding:
-            const EdgeInsets.only(left: 8, bottom: 4, right: 4, top: 4),
-        border: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: borderColor.value,
-          ),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: borderColor.value,
-          ),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: primarySwatch.value,
-          ),
-        ),
-        disabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Colors.grey.shade100,
-          ),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: dangerColor.value,
-          ),
-        ),
-      );
+    labelStyle: const TextStyle(fontSize: 50),
+    suffixStyle: const TextStyle(fontSize: 50),
+    hintStyle: const TextStyle(fontSize: 50),
+    floatingLabelStyle: const TextStyle(fontSize: 50),
+    contentPadding:
+    const EdgeInsets.only(left: 8, bottom: 4, right: 4, top: 4),
+    border: OutlineInputBorder(
+      borderSide: BorderSide(
+        color: borderColor.value,
+      ),
+    ),
+    enabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(
+        color: borderColor.value,
+      ),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(
+        color: primarySwatch,
+      ),
+    ),
+    disabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(
+        color: Colors.grey.shade100,
+      ),
+    ),
+    errorBorder: OutlineInputBorder(
+      borderSide: BorderSide(
+        color: dangerColor.value,
+      ),
+    ),
+  );
 
   FilledButtonThemeData _lightFilledButtonTheme(FontUtil fontUtil) =>
       FilledButtonThemeData(
         style: ButtonStyle(
           backgroundColor: MaterialStatePropertyAll(
-            primarySwatch.value,
+            primarySwatch,
           ),
           textStyle: MaterialStatePropertyAll(
-            textTheme(fontUtil, primarySwatch.value).labelMedium!.copyWith(
-                  color: Colors.white,
-                  fontSize: 16,
-                ),
+            textTheme(
+              fontUtil,
+              primarySwatch,
+            ).labelMedium!.copyWith(
+              color: Colors.white,
+              fontSize: 16,
+            ),
           ),
         ),
       );
@@ -167,20 +173,31 @@ class DarkTheme extends BaseTheme {
             Colors.transparent,
           ),
           textStyle: MaterialStatePropertyAll(
-            textTheme(fontUtil, primarySwatch.value)
-                .titleSmall!
-                .copyWith(color: Colors.blue),
+            textTheme(
+              fontUtil,
+              primarySwatch,
+            ).titleSmall!.copyWith(color: Colors.blue),
           ),
         ),
       );
 
   @override
   void changeColorBlindnessType(ColorBlindnessType type) {
-    primarySwatch.value = colorBlindness(
-        const Color(
-          0xFF16A086,
-        ),
-        type);
+    primarySwatch = MaterialColor(
+      0xFF079992,
+      {
+        50: colorBlindness(const Color(0xFFe6f5f4), type),
+        100: colorBlindness(const Color(0xFFcdebe9), type),
+        200: colorBlindness(const Color(0xff9cd6d3), type),
+        300: colorBlindness(const Color(0xff83ccc9), type),
+        400: colorBlindness(const Color(0xff6ac2be), type),
+        500: colorBlindness(const Color(0xff51b8b3), type),
+        600: colorBlindness(const Color(0xff39ada8), type),
+        700: colorBlindness(const Color(0xff20a39d), type),
+        800: colorBlindness(const Color(0xff079992), type),
+        900: colorBlindness(const Color(0xff068a83), type),
+      },
+    );
 
     chipBackgroundColor.value = colorBlindness(const Color(0xffFFD7D5), type);
     chipBackgroundColor2.value = colorBlindness(const Color(0xffE2E8F0), type);

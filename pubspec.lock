@@ -589,8 +589,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: new_main
-      resolved-ref: "0762dda33fd32692119624e357c4bbff8b573f73"
+      ref: "v0.0.4"
+      resolved-ref: "231aa676df35f6748f9724c2dae55a0bd3093aef"
       url: "https://github.com/RayanMobile1402/live_note_authentication.git"
     source: git
     version: "0.0.1"

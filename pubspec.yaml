@@ -66,7 +66,7 @@ dependencies:
   live_note_authentication:
     git:
       url: https://github.com/RayanMobile1402/live_note_authentication.git
-      ref: new_main
+      ref: v0.0.4
   flutter_nice_ui:
     git:
       url: https://github.com/aminJamali/flutter_nice_ui.git

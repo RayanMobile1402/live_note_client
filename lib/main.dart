@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:live_note_authentication/feature/authemtication_mian.dart';
+import 'package:live_note_authentication/feature/role_type.dart';
 
 import 'core/router/app_route_names.dart';
 import 'core/router/app_router.dart';
@@ -22,14 +23,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Obx(
         () => GetMaterialApp(
-      title: 'Flutter Demo',
-      theme: controller
-          .baseTheme
-          .value!
-          .createTheme(controller.fontUtil.value),
-      onGenerateRoute: AppRouter.onGenerateRoute,
-      initialRoute: AppRouteNames.splash,
-      home: const AutheticationMain(),
-    ),
-  );
+          title: 'Flutter Demo',
+          theme: controller.baseTheme.value!
+              .createTheme(controller.fontUtil.value),
+          onGenerateRoute: AppRouter.onGenerateRoute,
+          initialRoute: AppRouteNames.splash,
+          home: const AutheticationMain(
+            roleType: RoleType.client,
+          ),
+        ),
+      );
 }

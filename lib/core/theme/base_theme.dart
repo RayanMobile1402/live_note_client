@@ -7,9 +7,21 @@ import 'app_color_blindness.dart';
 abstract class BaseTheme {
   String currentFontFamily = 'Quicksand';
 
-  Rx<Color> primarySwatch = const Color(
+  MaterialColor primarySwatch = const MaterialColor(
     0xFF079992,
-  ).obs;
+    {
+      50: Color(0xFFe6f5f4),
+      100: Color(0xFFcdebe9),
+      200: Color(0xff9cd6d3),
+      300: Color(0xff83ccc9),
+      400: Color(0xff6ac2be),
+      500: Color(0xff51b8b3),
+      600: Color(0xff39ada8),
+      700: Color(0xff20a39d),
+      800: Color(0xff079992),
+      900: Color(0xff068a83),
+    },
+  );
   Rx<Color> secondaryColor = const Color(0xff054F6B).obs;
   Rx<Color> warningColor = const Color(0xffF57F17).obs;
   Rx<Color> dangerColor = const Color(0xffEB3939).obs;
@@ -33,78 +45,78 @@ abstract class BaseTheme {
   Rx<Color> disabledColor = Colors.grey.withOpacity(.8).obs;
 
   ThemeData createTheme(
-    FontUtil fontUtil,
-  );
+      FontUtil fontUtil,
+      );
 
   void changeColorBlindnessType(final ColorBlindnessType type);
 
   TextTheme textTheme(FontUtil fontUtil, final Color color) => TextTheme(
-        displayLarge: TextStyle(
-          fontSize: fontUtil.displayLarge.value,
-          color: color,
-        ),
-        displayMedium: TextStyle(
-          fontSize: fontUtil.displayMedium.value,
-          color: color,
-        ),
-        displaySmall: TextStyle(
-          fontSize: fontUtil.displaySmall.value,
-          color: color,
-        ),
-        headlineLarge: TextStyle(
-          fontSize: fontUtil.headlineLarge.value,
-          color: color,
-        ),
-        headlineMedium: TextStyle(
-          fontSize: fontUtil.headlineMedium.value,
-          color: color,
-        ),
-        headlineSmall: TextStyle(
-          fontSize: fontUtil.headlineSmall.value,
-          color: color,
-        ),
-        titleLarge: TextStyle(
-          fontSize: fontUtil.titleLarge.value,
-          color: color,
-        ),
-        titleMedium: TextStyle(
-          fontSize: fontUtil.titleMedium.value,
-          letterSpacing: 0.15,
-          color: color,
-        ),
-        titleSmall: TextStyle(
-          fontSize: fontUtil.titleSmall.value,
-          letterSpacing: 0.1,
-          color: color,
-        ),
-        labelLarge: TextStyle(
-          fontSize: fontUtil.labelLarge.value,
-          letterSpacing: 0.1,
-          color: color,
-        ),
-        labelMedium: TextStyle(
-          fontSize: fontUtil.labelMedium.value,
-          letterSpacing: 0.5,
-          color: color,
-        ),
-        labelSmall: TextStyle(
-          fontSize: fontUtil.labelSmall.value,
-          letterSpacing: 0.5,
-          color: color,
-        ),
-        bodyLarge: TextStyle(
-          fontSize: fontUtil.bodyLarge.value,
-          letterSpacing: 0.15,
-          color: color,
-        ),
-        bodyMedium: TextStyle(
-          fontSize: fontUtil.bodyMedium.value,
-          letterSpacing: 0.25,
-          color: color,
-        ),
-        bodySmall: TextStyle(
-          fontSize: fontUtil.bodySmall.value,
-          letterSpacing: 0.4,
-        ),
-      );
+    displayLarge: TextStyle(
+      fontSize: fontUtil.displayLarge.value,
+      color: color,
+    ),
+    displayMedium: TextStyle(
+      fontSize: fontUtil.displayMedium.value,
+      color: color,
+    ),
+    displaySmall: TextStyle(
+      fontSize: fontUtil.displaySmall.value,
+      color: color,
+    ),
+    headlineLarge: TextStyle(
+      fontSize: fontUtil.headlineLarge.value,
+      color: color,
+    ),
+    headlineMedium: TextStyle(
+      fontSize: fontUtil.headlineMedium.value,
+      color: color,
+    ),
+    headlineSmall: TextStyle(
+      fontSize: fontUtil.headlineSmall.value,
+      color: color,
+    ),
+    titleLarge: TextStyle(
+      fontSize: fontUtil.titleLarge.value,
+      color: color,
+    ),
+    titleMedium: TextStyle(
+      fontSize: fontUtil.titleMedium.value,
+      letterSpacing: 0.15,
+      color: color,
+    ),
+    titleSmall: TextStyle(
+      fontSize: fontUtil.titleSmall.value,
+      letterSpacing: 0.1,
+      color: color,
+    ),
+    labelLarge: TextStyle(
+      fontSize: fontUtil.labelLarge.value,
+      letterSpacing: 0.1,
+      color: color,
+    ),
+    labelMedium: TextStyle(
+      fontSize: fontUtil.labelMedium.value,
+      letterSpacing: 0.5,
+      color: color,
+    ),
+    labelSmall: TextStyle(
+      fontSize: fontUtil.labelSmall.value,
+      letterSpacing: 0.5,
+      color: color,
+    ),
+    bodyLarge: TextStyle(
+      fontSize: fontUtil.bodyLarge.value,
+      letterSpacing: 0.15,
+      color: color,
+    ),
+    bodyMedium: TextStyle(
+      fontSize: fontUtil.bodyMedium.value,
+      letterSpacing: 0.25,
+      color: color,
+    ),
+    bodySmall: TextStyle(
+      fontSize: fontUtil.bodySmall.value,
+      letterSpacing: 0.4,
+    ),
+  );
 }

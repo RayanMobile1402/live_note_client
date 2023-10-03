@@ -300,7 +300,7 @@ class Utils {
       onlyOne: true,
       borderRadius: const BorderRadius.all(Radius.circular(10)),
       contentPadding: const EdgeInsets.all(10),
-      contentColor: Utils.getBaseTheme(context).primarySwatch.value,
+      contentColor: Utils.getBaseTheme(context).primarySwatch,
       crossPage: true,
       textStyle:
           TextStyle(color: Utils.getBaseTheme(context).scaffoldBackgroundColor.value),
