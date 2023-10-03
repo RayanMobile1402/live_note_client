@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:live_note_authentication/feature/authemtication_mian.dart';
 
 import 'core/router/app_route_names.dart';
 import 'core/router/app_router.dart';
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
           .value!
           .createTheme(controller.fontUtil.value),
       onGenerateRoute: AppRouter.onGenerateRoute,
-      initialRoute: AppRouteNames.home,
+      initialRoute: AppRouteNames.splash,
+      home: const AutheticationMain(),
     ),
   );
 }

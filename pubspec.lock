@@ -9,6 +9,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.6"
+  animate_do:
+    dependency: transitive
+    description:
+      name: animate_do
+      sha256: "91b3e0306ba2096c7a7e1ee1ba96f491e25e92034c215f4bf8de6a7251c4bef1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.2"
   args:
     dependency: transitive
     description:
@@ -577,6 +585,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  live_note_authentication:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: new_main
+      resolved-ref: "0762dda33fd32692119624e357c4bbff8b573f73"
+      url: "https://github.com/RayanMobile1402/live_note_authentication.git"
+    source: git
+    version: "0.0.1"
   loading_animation_widget:
     dependency: "direct main"
     description:
@@ -585,6 +602,46 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0+4"
+  local_auth:
+    dependency: transitive
+    description:
+      name: local_auth
+      sha256: "7e6c63082e399b61e4af71266b012e767a5d4525dd6e9ba41e174fd42d76e115"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.7"
+  local_auth_android:
+    dependency: transitive
+    description:
+      name: local_auth_android
+      sha256: "9ad0b1ffa6f04f4d91e38c2d4c5046583e23f4cae8345776a994e8670df57fb1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.34"
+  local_auth_ios:
+    dependency: transitive
+    description:
+      name: local_auth_ios
+      sha256: "26a8d1ad0b4ef6f861d29921be8383000fda952e323a5b6752cf82ca9cf9a7a9"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.4"
+  local_auth_platform_interface:
+    dependency: transitive
+    description:
+      name: local_auth_platform_interface
+      sha256: fc5bd537970a324260fda506cfb61b33ad7426f37a8ea5c461cf612161ebba54
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.8"
+  local_auth_windows:
+    dependency: transitive
+    description:
+      name: local_auth_windows
+      sha256: "505ba3367ca781efb1c50d3132e44a2446bccc4163427bc203b9b4d8994d97ea"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.10"
   logger:
     dependency: transitive
     description:
@@ -641,6 +698,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.3.2"
+  open_store:
+    dependency: transitive
+    description:
+      name: open_store
+      sha256: "3d9f6a364a817235b779a23ba1bfcca220ab770c89e3b1f4974429e7a32b6cad"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.0"
+  package_info_plus:
+    dependency: transitive
+    description:
+      name: package_info_plus
+      sha256: "6ff267fcd9d48cb61c8df74a82680e8b82e940231bb5f68356672fde0397334a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.1.0"
+  package_info_plus_platform_interface:
+    dependency: transitive
+    description:
+      name: package_info_plus_platform_interface
+      sha256: "9bc8ba46813a4cc42c66ab781470711781940780fd8beddd0c3da62506d3a6c6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.1"
   path:
     dependency: "direct main"
     description:
@@ -753,6 +834,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.4.0"
+  pinput:
+    dependency: transitive
+    description:
+      name: pinput
+      sha256: a92b55ecf9c25d1b9e100af45905385d5bc34fc9b6b04177a9e82cb88fe4d805
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.1"
   platform:
     dependency: transitive
     description:
@@ -849,11 +938,27 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.1"
+  shimmer:
+    dependency: transitive
+    description:
+      name: shimmer
+      sha256: "5f88c883a22e9f9f299e5ba0e4f7e6054857224976a5d9f839d4ebdc94a14ac9"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.0"
   sky_engine:
     dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.99"
+  smart_auth:
+    dependency: transitive
+    description:
+      name: smart_auth
+      sha256: a25229b38c02f733d0a4e98d941b42bed91a976cb589e934895e60ccfa674cf6
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
   source_span:
     dependency: transitive
     description:
@@ -1006,6 +1111,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.2"
+  universal_platform:
+    dependency: transitive
+    description:
+      name: universal_platform
+      sha256: d315be0f6641898b280ffa34e2ddb14f3d12b1a37882557869646e0cc363d0cc
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0+1"
   url_launcher:
     dependency: transitive
     description:
