@@ -27,10 +27,10 @@ class MyApp extends StatelessWidget {
           theme: controller.baseTheme.value!
               .createTheme(controller.fontUtil.value),
           onGenerateRoute: AppRouter.onGenerateRoute,
-          initialRoute: AppRouteNames.splash,
-          home: const AutheticationMain(
-            roleType: RoleType.client,
-          ),
+          initialRoute: AppRouteNames.home,
+          // home: const AutheticationMain(
+          //   roleType: RoleType.client,
+          // ),
         ),
       );
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import '../utils/font_util.dart';
 import 'app_color_blindness.dart';
@@ -8,41 +7,41 @@ abstract class BaseTheme {
   String currentFontFamily = 'Quicksand';
 
   MaterialColor primarySwatch = const MaterialColor(
-    0xFF079992,
+    0xFF10AC84,
     {
-      50: Color(0xFFe6f5f4),
-      100: Color(0xFFcdebe9),
-      200: Color(0xff9cd6d3),
-      300: Color(0xff83ccc9),
-      400: Color(0xff6ac2be),
-      500: Color(0xff51b8b3),
-      600: Color(0xff39ada8),
-      700: Color(0xff20a39d),
-      800: Color(0xff079992),
-      900: Color(0xff068a83),
+      50: Color(0xFF10AC84),
+      100: Color(0xFF10AC84),
+      200: Color(0xFF10AC84),
+      300: Color(0xFF10AC84),
+      400: Color(0xFF10AC84),
+      500: Color(0xFF10AC84),
+      600: Color(0xFF10AC84),
+      700: Color(0xFF10AC84),
+      800: Color(0xFF10AC84),
+      900: Color(0xFF10AC84),
     },
   );
-  Rx<Color> secondaryColor = const Color(0xff054F6B).obs;
-  Rx<Color> warningColor = const Color(0xffF57F17).obs;
-  Rx<Color> dangerColor = const Color(0xffEB3939).obs;
-  Rx<Color> successColor = const Color(0xff55AA15).obs;
-  Rx<Color> infoColor = const Color(0xff46A5E5).obs;
-  Rx<Color> white = Colors.white.obs;
-  Rx<Color> black = Colors.black.obs;
-  Rx<Color> bookedColor = const Color(0xff82828F).obs;
-  Rx<Color> departColor = const Color(0xff6F4FAA).obs;
-  Rx<Color> endColor = const Color(0xff008299).obs;
-  Rx<Color> chipBackgroundColor = const Color(0xffFFD7D5).obs;
-  Rx<Color> chipBackgroundColor2 = const Color(0xffE2E8F0).obs;
-  Rx<Color> iconBackgroundColor = const Color(0xffCAE3FE).obs;
-  Rx<Color> textColor = const Color(0xff000000).obs;
-  Rx<Color> scaffoldBackgroundColor = const Color(0xffF0F1F3).obs;
-  Rx<Color> cardColor = Colors.white.obs;
-  Rx<Color> communicationMineItemColor = const Color(0xffD9FDD3).obs;
-  Rx<Color> communicationOthersItemColor = const Color(0xffffffff).obs;
-  Rx<Color> borderColor = const Color(0xffd3d3d3).obs;
-  Rx<Color> communicationMaskedColor = Colors.blue.shade100.obs;
-  Rx<Color> disabledColor = Colors.grey.withOpacity(.8).obs;
+  Color secondaryColor = const Color(0xff054F6B);
+  Color warningColor = const Color(0xffF57F17);
+  Color dangerColor = const Color(0xffEB3939);
+  Color successColor = const Color(0xff55AA15);
+  Color infoColor = const Color(0xff46A5E5);
+  Color white = Colors.white;
+  Color black = Colors.black;
+  Color bookedColor = const Color(0xff82828F);
+  Color departColor = const Color(0xff6F4FAA);
+  Color endColor = const Color(0xff008299);
+  Color chipBackgroundColor = const Color(0xffFFD7D5);
+  Color chipBackgroundColor2 = const Color(0xffE2E8F0);
+  Color iconBackgroundColor = const Color(0xffCAE3FE);
+  Color textColor = const Color(0xff000000);
+  Color scaffoldBackgroundColor = const Color(0xffF0F1F3);
+  Color cardColor = Colors.white;
+  Color communicationMineItemColor = const Color(0xffD9FDD3);
+  Color communicationOthersItemColor = const Color(0xffffffff);
+  Color borderColor = const Color(0xff3a3a3a);
+  Color communicationMaskedColor = Colors.blue.shade100;
+  Color disabledColor = Colors.grey.withOpacity(.8);
 
   ThemeData createTheme(
       FontUtil fontUtil,

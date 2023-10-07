@@ -13,7 +13,7 @@ class BorderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) => DecoratedBox(
         decoration: BoxDecoration(
-          color: color ?? Utils.getBaseTheme(context).chipBackgroundColor.value,
+          color: color ?? Utils.getBaseTheme(context).chipBackgroundColor,
           borderRadius: BorderRadius.circular(border ?? 8),
         ),
         child: child,

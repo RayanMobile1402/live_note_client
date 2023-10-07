@@ -591,7 +591,7 @@ packages:
       path: "."
       ref: "v0.0.4"
       resolved-ref: "231aa676df35f6748f9724c2dae55a0bd3093aef"
-      url: "https://github.com/RayanMobile1402/live_note_authentication.git"
+      url: "https://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@github.com/RayanMobile1402/live_note_authentication.git"
     source: git
     version: "0.0.1"
   loading_animation_widget:
