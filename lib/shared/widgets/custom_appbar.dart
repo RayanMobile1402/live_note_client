@@ -16,7 +16,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSize {
 
   AppBar _appbar(BuildContext context) => AppBar(
         title: _title(context),
-        foregroundColor: Utils.getBaseTheme(context).textColor.value,
+        foregroundColor: Utils.getBaseTheme(context).textColor,
         actions: [
           GestureDetector(
             onTap: () {
@@ -45,17 +45,17 @@ class CustomAppbar extends StatelessWidget implements PreferredSize {
                 child: Center(
                   child: badges.Badge(
                     badgeStyle: badges.BadgeStyle(
-                      badgeColor: Utils.getBaseTheme(context).warningColor.value,
+                      badgeColor: Utils.getBaseTheme(context).warningColor,
                     ),
                     badgeContent: Text(
                       '3',
                       style:
-                          TextStyle(color: Utils.getBaseTheme(context).white.value),
+                          TextStyle(color: Utils.getBaseTheme(context).white),
                     ),
                     child: Icon(
                       Icons.notifications_none,
                       size: 30,
-                      color: Utils.getBaseTheme(context).secondaryColor.value,
+                      color: Utils.getBaseTheme(context).secondaryColor,
                     ),
                   ),
                 ),

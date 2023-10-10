@@ -13,7 +13,7 @@ class ChipWidget extends StatelessWidget {
   Widget build(BuildContext context) => DecoratedBox(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(80),
-          color: Utils.getBaseTheme(context).chipBackgroundColor.value),
+          color: Utils.getBaseTheme(context).chipBackgroundColor),
       child: Padding(
         padding: const EdgeInsets.all(8),
         child: Text(

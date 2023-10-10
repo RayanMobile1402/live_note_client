@@ -39,7 +39,7 @@ class ErrorHandlerController {
                 children: [
                   Icon(
                     Icons.warning,
-                    color: Utils.getBaseTheme(context).warningColor.value,
+                    color: Utils.getBaseTheme(context).warningColor,
                   ),
                   const SizedBox(
                     width: 5,
@@ -50,7 +50,7 @@ class ErrorHandlerController {
                     style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
-                          color: Utils.getBaseTheme(context).warningColor.value,
+                          color: Utils.getBaseTheme(context).warningColor,
                         ),
                   ),
                 ],
@@ -72,7 +72,7 @@ class ErrorHandlerController {
                               child: Icon(
                                 Icons.circle,
                                 size: 12,
-                                color: Utils.getBaseTheme(context).warningColor.value,
+                                color: Utils.getBaseTheme(context).warningColor,
                               ),
                             ),
                             Utils.mediumHorizontalSpacer,
@@ -103,7 +103,7 @@ class ErrorHandlerController {
                     text: 'OK',
                     textStyle:
                         Theme.of(context).textTheme.titleMedium!.copyWith(
-                              color: Utils.getBaseTheme(context).black.value,
+                              color: Utils.getBaseTheme(context).black,
                             ),
                     onPressed: () async {
                       Navigator.of(context).pop();

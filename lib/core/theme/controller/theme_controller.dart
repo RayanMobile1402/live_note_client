@@ -24,7 +24,7 @@ class ThemeController extends GetxController {
       currentThemeType.value = ThemeType.dark;
     }
     print('before : ${baseTheme.value.runtimeType}');
-    baseTheme.value=null;
+    baseTheme.value = null;
     baseTheme.value = theme;
     print('after : ${baseTheme.value.runtimeType}');
   }
@@ -32,6 +32,8 @@ class ThemeController extends GetxController {
   void changeColorBlindnessType(final BlindnessType type) {
     currentBlindnessType.value = type;
     baseTheme.value!.changeColorBlindnessType(type.type);
+    baseTheme.value!
+        .createTheme(fontUtil.value..currentBlindnessType.value = type.type);
   }
 
   void changeFontFamily(final FontEnum value) {

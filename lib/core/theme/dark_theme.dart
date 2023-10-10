@@ -19,21 +19,21 @@ class DarkTheme extends BaseTheme {
         colorScheme: colorBlindnessColorScheme(
           ColorScheme.fromSwatch(
             primarySwatch: primarySwatch,
-            accentColor: secondaryColor.value,
-            backgroundColor: scaffoldBackgroundColor.value,
-            cardColor: cardColor.value,
-            errorColor: dangerColor.value,
+            accentColor: secondaryColor,
+            backgroundColor: scaffoldBackgroundColor,
+            cardColor: cardColor,
+            errorColor: dangerColor,
           ),
           fontUtil.currentBlindnessType.value,
         ),
         checkboxTheme: CheckboxThemeData(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-          side: BorderSide(width: 1, color: borderColor.value),
+          side: BorderSide(width: 1, color: borderColor),
         ),
         fontFamily: currentFontFamily,
-        disabledColor: disabledColor.value,
-        scaffoldBackgroundColor: scaffoldBackgroundColor.value,
-        textTheme: textTheme(fontUtil, textColor.value),
+        disabledColor: disabledColor,
+        scaffoldBackgroundColor: scaffoldBackgroundColor,
+        textTheme: textTheme(fontUtil, textColor),
         filledButtonTheme: _lightFilledButtonTheme(fontUtil),
         textButtonTheme: _lightFlatButtonTheme(fontUtil),
         floatingActionButtonTheme: lightFloatingActionButtonThemeData(),
@@ -43,15 +43,15 @@ class DarkTheme extends BaseTheme {
         iconButtonTheme: lightIconButtonThemeData(),
         inputDecorationTheme: _lightInputTheme(),
         listTileTheme: ListTileThemeData(
-          iconColor: textColor.value,
+          iconColor: textColor,
         ),
         iconTheme: IconThemeData(
-          color: textColor.value,
+          color: textColor,
         ),
-        cardColor: cardColor.value,
-        dialogBackgroundColor: cardColor.value,
+        cardColor: cardColor,
+        dialogBackgroundColor: cardColor,
         drawerTheme: DrawerThemeData(
-          backgroundColor: cardColor.value,
+          backgroundColor: cardColor,
         ),
       );
 
@@ -60,7 +60,7 @@ class DarkTheme extends BaseTheme {
       side: MaterialStateProperty.all(
         BorderSide(
           style: BorderStyle.solid,
-          color: secondaryColor.value,
+          color: secondaryColor,
           width: 2,
         ),
       ),
@@ -68,7 +68,7 @@ class DarkTheme extends BaseTheme {
   );
 
   ButtonThemeData lightButtonThemeData() => ButtonThemeData(
-    buttonColor: secondaryColor.value,
+    buttonColor: secondaryColor,
     textTheme: ButtonTextTheme.accent,
     shape: const RoundedRectangleBorder(
       borderRadius: Utils.normalRadius,
@@ -76,7 +76,7 @@ class DarkTheme extends BaseTheme {
   );
 
   OutlinedButtonThemeData lightOutlinedButtonThemeData(
-      final FontUtil fontUtil) =>
+      final FontUtil fontUtil,) =>
       OutlinedButtonThemeData(
         style: ButtonStyle(
           textStyle: MaterialStatePropertyAll(
@@ -102,16 +102,16 @@ class DarkTheme extends BaseTheme {
       ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           textStyle: const TextStyle(fontSize: 16),
-          backgroundColor: secondaryColor.value,
-          foregroundColor: cardColor.value,
+          backgroundColor: secondaryColor,
+          foregroundColor: cardColor,
         ),
       );
 
   FloatingActionButtonThemeData lightFloatingActionButtonThemeData() =>
       FloatingActionButtonThemeData(
-        backgroundColor: secondaryColor.value,
-        splashColor: cardColor.value,
-        foregroundColor: cardColor.value,
+        backgroundColor: secondaryColor,
+        splashColor: cardColor,
+        foregroundColor: cardColor,
       );
 
   InputDecorationTheme _lightInputTheme() => InputDecorationTheme(
@@ -123,12 +123,12 @@ class DarkTheme extends BaseTheme {
     const EdgeInsets.only(left: 8, bottom: 4, right: 4, top: 4),
     border: OutlineInputBorder(
       borderSide: BorderSide(
-        color: borderColor.value,
+        color: borderColor,
       ),
     ),
     enabledBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: borderColor.value,
+        color: borderColor,
       ),
     ),
     focusedBorder: OutlineInputBorder(
@@ -143,7 +143,7 @@ class DarkTheme extends BaseTheme {
     ),
     errorBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: dangerColor.value,
+        color: dangerColor,
       ),
     ),
   );
@@ -199,23 +199,23 @@ class DarkTheme extends BaseTheme {
       },
     );
 
-    chipBackgroundColor.value = colorBlindness(const Color(0xffFFD7D5), type);
-    chipBackgroundColor2.value = colorBlindness(const Color(0xffE2E8F0), type);
-    iconBackgroundColor.value = colorBlindness(const Color(0xffCAE3FE), type);
-    secondaryColor.value = colorBlindness(const Color(0xffBB86FC), type);
-    departColor.value = colorBlindness(const Color(0xff6F4FAA), type);
-    textColor.value = const Color(0xffffffff);
-    dangerColor.value = const Color(0xffEB3939);
-    endColor.value = const Color(0xff008299);
-    warningColor.value = const Color(0xffF57F17);
-    successColor.value = const Color(0xff55AA15);
-    scaffoldBackgroundColor.value = const Color(0xff121212);
-    infoColor.value = const Color(0xff4F46E5);
-    cardColor.value = const Color(0xff1E1E1E);
-    communicationMineItemColor.value = const Color(0xff006A60);
-    communicationOthersItemColor.value = const Color(0xffffffff);
-    borderColor.value = const Color(0xffd3d3d3);
-    communicationMaskedColor.value = Colors.blue.shade700;
-    disabledColor.value = Colors.grey.withOpacity(.8);
+    chipBackgroundColor = colorBlindness(const Color(0xffFFD7D5), type);
+    chipBackgroundColor2 = colorBlindness(const Color(0xffE2E8F0), type);
+    iconBackgroundColor = colorBlindness(const Color(0xffCAE3FE), type);
+    secondaryColor = colorBlindness(const Color(0xffBB86FC), type);
+    departColor = colorBlindness(const Color(0xff6F4FAA), type);
+    textColor = const Color(0xffffffff);
+    dangerColor = const Color(0xffEB3939);
+    endColor = const Color(0xff008299);
+    warningColor = const Color(0xffF57F17);
+    successColor = const Color(0xff55AA15);
+    scaffoldBackgroundColor = const Color(0xff121212);
+    infoColor = const Color(0xff4F46E5);
+    cardColor = const Color(0xff1E1E1E);
+    communicationMineItemColor = const Color(0xff006A60);
+    communicationOthersItemColor = const Color(0xffffffff);
+    borderColor = const Color(0xffd3d3d3);
+    communicationMaskedColor = Colors.blue.shade700;
+    disabledColor = Colors.grey.withOpacity(.8);
   }
 }

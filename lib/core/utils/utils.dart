@@ -303,7 +303,7 @@ class Utils {
       contentColor: Utils.getBaseTheme(context).primarySwatch,
       crossPage: true,
       textStyle:
-          TextStyle(color: Utils.getBaseTheme(context).scaffoldBackgroundColor.value),
+          TextStyle(color: Utils.getBaseTheme(context).scaffoldBackgroundColor),
     );
   }
 
