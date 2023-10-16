@@ -370,8 +370,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: main
-      resolved-ref: "59f9415001e99abfc78a0c08a9734eaed8e1e551"
+      ref: "v0.0.7"
+      resolved-ref: "70d67f5c19f5a8bd82043591b063811426ddb0b0"
       url: "https://github.com/aminJamali/flutter_nice_ui.git"
     source: git
     version: "0.0.9"
@@ -597,8 +597,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "v0.0.8"
-      resolved-ref: "091426730835e7f538eec18117bf392b0d02c1f5"
+      ref: "v0.0.9"
+      resolved-ref: "0d22557324b0b2e1c002c3cc879da01fcd03f82c"
       url: "https://github.com/RayanMobile1402/live_note_authentication.git"
     source: git
     version: "0.0.1"
